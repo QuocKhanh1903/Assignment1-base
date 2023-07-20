@@ -1,3 +1,4 @@
+import AdminPage from "../pages/AdminPage/Adminpage";
 import HomePage from "../pages/HomePage/HomePage";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import OrderPage from "../pages/OrderPage/OrderPage";
@@ -43,6 +44,11 @@ export const routes = [
     page: ProductDetailPage,
     isShowHeader: true,
   },
+  {
+    path: "/Admin",
+    page: AdminPage,
+    isShowHeader: true,
+},
   {
     path: "*",
     page: NotFoundPage,
