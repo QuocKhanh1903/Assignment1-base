@@ -1,14 +1,16 @@
-import { Button } from "antd";
-import React from "react";
-import { SearchOutlined } from "@ant-design/icons";
+import { Button } from 'antd'
+import React from 'react'
 
-const ButtonComponent = (props) => {
-  const { size, textButton } = props;
+const ButtonComponent = ({ size, styleButton, styleTextButton, textbutton, disabled, ...rests }) => {
   return (
-    <Button size={size} icon={<SearchOutlined />}>
-      {textButton}
+    <Button
+      style={styleButton}
+      size={size}
+      {...rests}
+    >
+      <span style={styleTextButton}>{textbutton}</span>
     </Button>
-  );
-};
+  )
+}
 
-export default ButtonComponent;
+export default ButtonComponent

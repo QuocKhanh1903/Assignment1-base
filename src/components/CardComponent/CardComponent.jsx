@@ -1,5 +1,6 @@
 import { Card } from "antd";
 import React from "react";
+import { WrapperStyleTextSell } from "../ProductDetailComponent/style";
 import {
   StyleNameProduct,
   WrapperDiscountText,
@@ -25,7 +26,7 @@ const CardComponent = () => {
           <span>4.95</span>{" "}
           <StarOutlined style={{ fontSize: "10px", color: "yellow" }} />
         </span>
-        <span>| Đã bán 3000+</span>
+        <WrapperStyleTextSell>| Đã bán 3000+</WrapperStyleTextSell>
       </WrapperReportText>
       <WrapperPriceText>
         1.000.000đ

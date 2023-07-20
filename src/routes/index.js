@@ -1,4 +1,3 @@
-import AdminPage from "../pages/AdminPage/Adminpage";
 import HomePage from "../pages/HomePage/HomePage";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import OrderPage from "../pages/OrderPage/OrderPage";
@@ -25,30 +24,25 @@ export const routes = [
     isShowHeader: true,
   },
   {
-    path: "/type",
+    path: "/:type",
     page: TypeProductPage,
     isShowHeader: true,
   },
   {
     path: "/sign-in",
     page: SignIn,
-    isShowHeader: true,
+    isShowHeader: false,
   },
   {
     path: "/sign-up",
     page: SignUp,
-    isShowHeader: true,
+    isShowHeader: false,
   },
   {
-    path: "/product-detail",
+    path: "/product-details",
     page: ProductDetailPage,
     isShowHeader: true,
   },
-  {
-    path: "/Admin",
-    page: AdminPage,
-    isShowHeader: true,
-},
   {
     path: "*",
     page: NotFoundPage,
